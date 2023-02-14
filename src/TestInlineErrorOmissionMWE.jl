@@ -1,6 +1,6 @@
 module TestInlineErrorOmissionMWE
 
-export main, data1, data2
+export main, data
 
 include("core.jl")
 include("data.jl")
