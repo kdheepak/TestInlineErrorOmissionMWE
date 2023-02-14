@@ -4,9 +4,9 @@
 
 ```julia
 $ julia --project -e 'using TestInlineErrorOmissionMWE; TestInlineErrorOmissionMWE.main1()'
-ERROR: "group/x1 not found"
+ERROR: "x1 not found"
 Stacktrace:
- [1] ReadDataSetFromHDF5(name::String)
+ [1] default_value(name::String)
    @ TestInlineErrorOmissionMWE C:\Users\USERNAME\gitrepos\TestInlineErrorOmissionMWE\src\main.jl:2
  [2] main1()
    @ TestInlineErrorOmissionMWE C:\Users\USERNAME\gitrepos\TestInlineErrorOmissionMWE\src\main.jl:4
@@ -18,9 +18,9 @@ Stacktrace:
 
 ```julia
 $ julia --project -e 'using TestInlineErrorOmissionMWE; TestInlineErrorOmissionMWE.main2()'
-ERROR: "group/x1 not found"
+ERROR: "x1 not found"
 Stacktrace:
- [1] ReadDataSetFromHDF5(name::String)
+ [1] default_value(name::String)
    @ TestInlineErrorOmissionMWE C:\Users\USERNAME\gitrepos\TestInlineErrorOmissionMWE\src\main.jl:2
  [2] TestInlineErrorOmissionMWE.Data()
    @ TestInlineErrorOmissionMWE C:\Users\USERNAME\gitrepos\TestInlineErrorOmissionMWE\src\data.jl:5
