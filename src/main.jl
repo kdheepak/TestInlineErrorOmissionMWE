@@ -1,3 +1,5 @@
+ReadDataSetFromHDF5(name::String) = throw("$name not found")
+
 create_data1(year) = (; data1=Data(; year))
 create_data2(year) = (; data1=Data())
 
