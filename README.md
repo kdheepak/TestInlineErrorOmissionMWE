@@ -29,3 +29,20 @@ Stacktrace:
  [4] top-level scope
    @ none:1
 ```
+
+`main1()` is missing the stackframe that calls into the `src\data.jl`'s `Data` struct, i.e. this line:
+
+```julia
+ [2] TestInlineErrorOmissionMWE.Data()
+   @ TestInlineErrorOmissionMWE C:\Users\USERNAME\gitrepos\TestInlineErrorOmissionMWE\src\data.jl:5
+```
+
+is present in `main2()` but not in `main1()`.
+
+`main1()` and `main2()` are defined like this:
+
+```julia
+main1() = (; data1=Data(; year=1))
+
+main2() = (; data1=Data())
+```
