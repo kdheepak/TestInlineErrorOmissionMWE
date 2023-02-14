@@ -1,0 +1,7 @@
+name = "TestInlineErrorOmissionMWE"
+uuid = "f6e7790b-f65f-4800-b63d-f1fe9e7bd340"
+authors = ["Dheepak Krishnamurthy <me@kdheepak.com>"]
+version = "0.1.0"
+
+[deps]
+Logging = "56ddb016-857b-54e1-b83d-db4d58db5568"
