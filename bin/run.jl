@@ -1,3 +1,5 @@
 using TestInlineErrorOmissionMWE
 
-main()
+TestInlineErrorOmissionMWE.main1()
+
+TestInlineErrorOmissionMWE.main2()
