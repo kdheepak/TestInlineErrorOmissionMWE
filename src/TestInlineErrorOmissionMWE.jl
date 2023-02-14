@@ -1,6 +1,6 @@
 module TestInlineErrorOmissionMWE
 
-include("data.jl")
+include("foo.jl")
 include("main.jl")
 
 end

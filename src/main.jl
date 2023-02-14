@@ -1,6 +1,6 @@
 
-default_value(name::String) = throw("$name not found")
+default_value() = throw("oh no")
 
-main1() = (; data1=Data(; year=1))
+main1() = foo(; kwarg=1)
 
-main2() = (; data1=Data())
+main2() = foo()

@@ -1,0 +1,1 @@
+foo(; x1=default_value()) = nothing
